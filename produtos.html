@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Categorias de roupas de uma demonstração acadêmica inspirada no case Any Wear, Anywhere.">
+  <title>LATAM | Roupas</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="theme-color" content="#0a1728">
+  <script>try{var t=localStorage.getItem("latam-demo-theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.classList.add("dark")}catch(e){}</script>
+</head>
+<body class="products-page">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="LATAM - início">
+      <span class="brand-mark" aria-hidden="true">L</span>
+      <span class="brand-text"><strong>LATAM</strong><small>ANY WEAR • DEMO ACADÊMICA</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span><span class="sr-only">Abrir menu</span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Campanha</a>
+      <a class="active" href="produtos.html">Roupas</a>
+      <a href="index.html#como-funciona">Como funciona</a>
+      <a href="index.html#beneficios">Benefícios</a>
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#pre-reserva">Pré-reserva</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ativar tela escura"><span aria-hidden="true">◐</span> Tela escura</button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="product-hero">
+      <div>
+        <p class="eyebrow">CATÁLOGO DEMONSTRATIVO</p>
+        <h1>Roupas pensadas<br><em>para o destino.</em></h1>
+        <p>O case informa que a seleção pode considerar tamanho, estilo e estação do ano. As categorias abaixo são apenas uma representação visual da interface.</p>
+      </div>
+      <div class="product-hero-art"><div class="snowflake">❄</div><div class="coat-mini"></div></div>
+    </section>
+
+    <section class="product-shell">
+      <div class="category-tabs" role="group" aria-label="Filtrar categorias de roupas">
+        <button class="category-tab active" data-filter="todos" aria-pressed="true">Todas</button>
+        <button class="category-tab" data-filter="jaquetas" aria-pressed="false">Jaquetas</button>
+        <button class="category-tab" data-filter="calcas" aria-pressed="false">Calças</button>
+        <button class="category-tab" data-filter="botas" aria-pressed="false">Botas</button>
+        <button class="category-tab" data-filter="toucas" aria-pressed="false">Toucas</button>
+      </div>
+
+      <p class="result-count" id="resultCount" role="status" aria-live="polite"></p>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="jaquetas">
+          <div class="product-image jacket-icon"><span></span></div>
+          <div class="product-meta"><span>JAQUETAS</span><small>Categoria</small></div>
+          <h2>Jaquetas</h2>
+          <p>Categoria de vestuário para destinos de clima frio. A demonstração mantém a descrição genérica para não criar especificações que não constam no case.</p>
+          <button class="detail-btn" data-product="Jaquetas">Ver conceito</button>
+        </article>
+
+        <article class="product-card" data-category="calcas">
+          <div class="product-image pants-icon"><span></span></div>
+          <div class="product-meta"><span>CALÇAS</span><small>Categoria</small></div>
+          <h2>Calças</h2>
+          <p>Categoria apresentada como parte de um catálogo de inverno demonstrativo, sem composição, marca ou preço inventados.</p>
+          <button class="detail-btn" data-product="Calças">Ver conceito</button>
+        </article>
+
+        <article class="product-card" data-category="botas">
+          <div class="product-image boots-icon"><span></span></div>
+          <div class="product-meta"><span>BOTAS</span><small>Categoria</small></div>
+          <h2>Botas</h2>
+          <p>Categoria visual para representar opções de viagem. O case não define modelos específicos, por isso a interface evita atribuir características técnicas.</p>
+          <button class="detail-btn" data-product="Botas">Ver conceito</button>
+        </article>
+
+        <article class="product-card" data-category="toucas">
+          <div class="product-image beanie-icon"><span></span></div>
+          <div class="product-meta"><span>TOUCAS</span><small>Categoria</small></div>
+          <h2>Toucas</h2>
+          <p>Categoria complementar de inverno. A função aqui é exemplificar como o menu pode levar para uma seleção por tipo de peça.</p>
+          <button class="detail-btn" data-product="Toucas">Ver conceito</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="product-info">
+      <div>
+        <p class="eyebrow">COMO O CATÁLOGO SE CONECTA À CAMPANHA</p>
+        <h2>Não é uma loja. É uma etapa da viagem.</h2>
+      </div>
+      <p>Na proposta apresentada no case, a escolha do pacote acontece durante a jornada de compra e o serviço é entregue no destino. A página de roupas serve para tornar essa escolha visual e intuitiva.</p>
+      <a class="btn btn-primary" href="index.html#pre-reserva">Fazer pré-reserva demonstrativa</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>LATAM • Any Wear — demonstração acadêmica</span>
+    <a href="index.html">Voltar para campanha ↑</a>
+  </footer>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="Fechar">×</button>
+      <p class="eyebrow">CONCEITO DE INTERFACE</p>
+      <h2 id="modalTitle">Peça</h2>
+      <p id="modalText">Descrição</p>
+      <a class="btn btn-primary" href="index.html#como-funciona">Voltar para a mecânica</a>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
